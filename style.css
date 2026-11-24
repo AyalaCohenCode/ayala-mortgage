@@ -1,0 +1,17 @@
+/* עיצוב כללי לכל האתר */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FBFAF7; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid #C9A227;
+  outline-offset: 2px;
+}
+input[type=range] { width: 100%; accent-color: #14213D; height: 28px; }
+[hidden] { display: none !important; }
+
+/* בטלפון: כותרות קצת יותר קטנות */
+@media (max-width: 640px) {
+  h1 { font-size: 40px !important; }
+  h2 { font-size: 30px !important; }
+  section { padding-top: 48px !important; padding-bottom: 48px !important; }
+}
